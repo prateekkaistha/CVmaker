@@ -4,7 +4,7 @@ base = None
 
 executables = [Executable("cv.py", base=base)]
 
-packages = ["idna"]
+packages = ["idna","sys","tkinter","PIL","datetime"]
 options = {
     'build_exe': {    
         'packages':packages,
@@ -12,9 +12,9 @@ options = {
 }
 
 setup(
-    name = "<any name>",
+    name = "cvmakerr",
     options = options,
-    version = "<any number>",
-    description = '<any description>',
+    version = "0.1",
+    description = 'cretes pdf of cv',
     executables = executables
 )
